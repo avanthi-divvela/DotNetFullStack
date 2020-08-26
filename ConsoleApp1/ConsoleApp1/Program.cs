@@ -55,10 +55,30 @@ namespace ConsoleApp1
 
             //*************Access Modifiers*****************
 
-            AccessModifiers obj_AccessModifiers = new AccessModifiers();
-            obj_AccessModifiers.GetEmpName();
+            //AccessModifiers obj_AccessModifiers = new AccessModifiers();
+            //obj_AccessModifiers.GetEmpName();
 
+            //*************Encapsulation Demo*****************
+            //EncapsulationDemo ObjEncapsulation = new EncapsulationDemo();
+            //ObjEncapsulation.setX(10);
+            //Console.WriteLine(ObjEncapsulation.getX());
+            //Console.Read();
 
+            //*************Constructor*****************
+            //User ObjUser = new User();
+            //Console.WriteLine(ObjUser.getUserName());
+            //Console.Read();
+
+            //************Inheritance Demo****************
+            UserDetails objUserDetails = new UserDetails();
+            objUserDetails.getUserInfo("Avanthi");
+
+            objUserDetails.name = "Varshith";
+            Console.WriteLine(objUserDetails.name);
+
+            objUserDetails.age = 34;
+            objUserDetails.getAge();
+            Console.ReadKey();
         }
     }
 }
