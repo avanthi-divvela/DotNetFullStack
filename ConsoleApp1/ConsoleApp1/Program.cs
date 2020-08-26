@@ -3,6 +3,7 @@
 //using System.Linq;
 //using System.Text;
 //using System.Threading.Tasks;
+using static ConsoleApp1.MultiLevelInheritance;
 
 namespace ConsoleApp1
 {
@@ -70,14 +71,46 @@ namespace ConsoleApp1
             //Console.Read();
 
             //************Inheritance Demo****************
-            UserDetails objUserDetails = new UserDetails();
-            objUserDetails.getUserInfo("Avanthi");
+            //UserDetails objUserDetails = new UserDetails();
+            //objUserDetails.getUserInfo("Avanthi");
 
-            objUserDetails.name = "Varshith";
-            Console.WriteLine(objUserDetails.name);
+            //objUserDetails.name = "Varshith";
+            //Console.WriteLine(objUserDetails.name);
 
-            objUserDetails.age = 34;
-            objUserDetails.getAge();
+            //objUserDetails.age = 34;
+            //objUserDetails.getAge();
+            //Console.ReadKey();
+
+            //************Multi-level Inheritance Demo****************
+
+            //Inculded the MultiLevelInheritance class as a static namespace
+            //So the class 'C' is directly accessible else it need to be accessed with its parent class "MultiLevelInheritance.C"
+
+            //C objC = new C();
+            //objC.name = "Avanthi";
+            //objC.location = "Illinois";
+            //objC.age = 34;
+            //objC.getName();
+            //objC.getLocation();
+            //objC.getAge();
+            //Console.ReadKey();
+
+
+            //************ Compile Time Polymorphism Demo****************
+            //Polymorphism objPolymorphism = new Polymorphism();
+            //objPolymorphism.AddNumbers(3, 4);
+            //objPolymorphism.AddNumbers(3, 6, 7);
+            //objPolymorphism.AddNumbers(3.4, 7.8);
+            //Console.ReadKey();
+
+            //************ Compile Time Polymorphism Demo****************
+            Polymorphism.BClass objBClass = new Polymorphism.BClass();
+            Console.WriteLine("Function call from BClass object:");
+            objBClass.GetInfo();
+
+            Polymorphism.AClass objAclass = new Polymorphism.AClass();
+            Console.WriteLine("\nFunction call from AClass object:");
+            objAclass.GetInfo();
             Console.ReadKey();
         }
     }
