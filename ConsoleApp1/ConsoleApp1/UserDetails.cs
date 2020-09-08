@@ -14,8 +14,7 @@ namespace ConsoleApp1
             Console.WriteLine("Child class constructor");
         }
         public void getAge()
-        {
-            
+        {            
             Console.WriteLine("Age: " + age);
         }
     }

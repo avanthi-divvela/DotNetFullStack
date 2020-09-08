@@ -25,4 +25,6 @@ namespace ConsoleApp1
             Console.WriteLine("Name: " + name);
         }
     }
+
+    //Child class in UserDetails.cs
 }

@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class User
+    class User      
     {
-        string name;
+        //public int MyPropery { get;}
+
+        readonly string name = "test";
         public User()
         {
             name = "Avanthi";
         }
 
         public string getUserName()
-        {
-            return this.name;
+        {           
+            return name;
         }
     }
 }
